@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://www.gurnalaw.ca/sitemap_index.xml

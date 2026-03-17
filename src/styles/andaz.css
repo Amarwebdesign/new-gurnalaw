@@ -1,0 +1,89 @@
+  
+.bcpnpform label{
+    color: #000;
+  }
+.bcpnpform .calculator-label{
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 40px;
+}
+@media (max-width:768px) {
+  .bcpnpform .calculator-label{
+    font-size: 18px;
+
+  } 
+  
+}
+.bcpnpform  .tootal-score #fieldname1_1{
+    font-size: 55px;
+    font-weight: 700;
+    color: #fff;
+    display: inline;
+    border-radius: 100px;
+}
+@media (max-width:768px) {
+  .bcpnpform  .tootal-score #fieldname1_1{
+  font-size: 35px;
+}
+}
+/* Hide the default radio button */
+.bcpnpform .input__field {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Custom radio button */
+.bcpnpform .input__field + label {
+  position: relative;
+  padding-left: 2rem; /* Space for the custom radio button */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Style the custom radio button */
+.bcpnpform .input__field + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.5rem; 
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 5px solid #1b568b;
+  background-color: #fff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Style the checked state */
+.bcpnpform .input__field:checked + label::before {
+  background-color: #1b568b; /* Customize background color when checked */
+  border-color: #1b568b;
+}
+
+.bcpnpform .input__field:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 0.45rem; /* Center within the circle */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.6rem; /* Adjust size to fit inside the radio button */
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: #fbb033; 
+img.logo-white.w-full {
+  max-width: 100px;
+}
+}
+
+/* Hover effect */
+.bcpnpform .input__field + label:hover::before {
+  border-color: #0056b3; /* Darker shade for hover effect */
+img.logo.w-full {
+  max-width: 100px;
+}
+}

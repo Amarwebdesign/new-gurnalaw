@@ -1,0 +1,73 @@
+import "@/styles/globals.css";
+import "@/styles/andaz.css";
+import "@/styles/testi.css";
+import { Poppins } from "next/font/google";
+import Link from "next/link";
+import Header from "@/components/Layout/Header";
+import Footer from "@/components/Layout/Footer";
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-poppins',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+});
+
+export const metadata = {
+  title: 'Immigration Lawyer in Canada | Gurna Law Corporation',
+  description: 'Gurna Law Corporation is offering services of Canadian immigration. These services include immigration law, visa refusal, & citizenship.',
+  icons: {
+    icon: '/favicon/favicon.ico',
+    apple: '/favicon/apple-touch-icon.png',
+  },
+  manifest: '/favicon/site.webmanifest',
+};
+
+export default function RootLayout({
+  children,
+}) {
+  return (
+    <html lang="en">
+      <head>
+        {/* Google Ads gtag.js script */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16748380603"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-16748380603');
+            `,
+          }}
+        />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BDKQ5ZZ99V">
+        </script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-BDKQ5ZZ99V');`,
+          }}
+        />
+      </head>
+      <body className={`${poppins.className}`}>
+        <Header />
+        <main className="min-h-screen">
+          {children}
+        </main>
+        <Footer />
+        {/* <div className="mouseCursor cursor-outer"></div>
+        <div className="mouseCursor cursor-inner">
+            <span>Drag</span>
+        </div> */}
+        <Link className=" fixed bottom-[50px] right-[30px] z-[100] footer-down-phone" title="Gurna Law Contact Number - +1-604-261-3171" href="tel:+1-604-261-3171">
+          <span className="w-14 h-14 block"><svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs><linearGradient id="linear-gradient" x1="5.86" y1="34.14" x2="34.14" y2="5.86" gradientTransform="translate(0 40) scale(1 -1)" gradientUnits="userSpaceOnUse"><stop offset="0" stopColor="000"></stop><stop offset="1" stopColor="#000"></stop></linearGradient></defs><g id="Layer_1-2" data-name="Layer 1"><g id="_97" data-name=" 97"><circle id="background" fill="url(#linear-gradient)" cx="20" cy="20" r="20"></circle><g><path fill="#fff" d="M28.52,26.02c0-.49-.17-.73-.62-.89-1.47-.49-2.94-.97-4.4-1.47-.29-.11-.62-.06-.88.13-.55.38-1.12.74-1.67,1.12-.11.09-.26.09-.37.02-.92-.5-1.76-1.11-2.52-1.83-1.07-.99-2-2.08-2.7-3.37-.09-.17-.08-.28.03-.44.38-.55.73-1.1,1.11-1.65.18-.24.23-.57.12-.85-.5-1.48-.99-2.96-1.49-4.44-.14-.41-.4-.6-.83-.6-1,0-2,0-2.99,0-1.38,0-2.37,1.02-2.36,2.4.02,2.41.61,4.68,1.69,6.82,1.97,3.9,4.92,6.81,8.86,8.72,2.11,1.02,4.34,1.57,6.7,1.57,1.13,0,2.11-.79,2.26-1.9.02-.13.03-.27.03-.41h0c0-.14,0-.28,0-.41v-1.04c.01-.5.01-1,.01-1.49h0Z"></path><path fill="#fff" d="M28.59,11.37c-1.28-1.35-2.84-2.2-4.65-2.6-.6-.13-1.12.25-1.15.83-.02.48.28.83.83.96,1.02.23,1.97.63,2.79,1.28,2.34,1.88,3.27,4.3,2.77,7.26-.09.55.21,1.02.71,1.11.49.1.96-.22,1.05-.71,0-.02,0-.04.01-.06.09-.58.15-1.17.19-1.49-.04-2.7-.88-4.81-2.55-6.57h0Z"></path><path fill="#fff" d="M22.63,13.35c2.57.64,4.04,2.88,3.6,5.49-.09.55.21,1.02.71,1.11.52.1.98-.23,1.08-.79.07-.41.1-.82.15-1.23-.02-3.04-2.17-5.71-5.13-6.35-.57-.12-1.04.15-1.16.66s.19.96.75,1.1h0Z"></path><path fill="#fff" d="M21.64,16.17c1.21.34,1.8,1.24,1.61,2.49-.09.49.24.96.73,1.05.49.09.96-.24,1.05-.73.05-.26.07-.53.1-.79-.02-1.81-1.28-3.38-3.05-3.78-.54-.12-1.01.15-1.13.66-.12.49.17.95.7,1.09h0Z"></path></g></g></g></svg></span>
+        </Link>
+      </body>
+    </html>
+  );
+}
