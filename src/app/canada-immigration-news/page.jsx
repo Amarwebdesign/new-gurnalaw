@@ -1,7 +1,5 @@
-import HeroInnerPage from "@/components/Layout/HeroInnerPage";
-import HeroPost from "@/components/blog/HeroPost";
 import MoreStories from "@/components/blog/MoreStories";
-import Container from "@/components/Layout/Container";
+import InnerBanner from "@/components/InnerBanner";
 import { getAllPostsForHome } from "@/lib/api";
 
 export const metadata = {
@@ -24,50 +22,35 @@ export default async function CanadaImmigrationNews() {
   try {
     const allPosts = await getAllPostsForHome(false);
     const edges = allPosts?.edges || [];
-    const heroPost = edges[0]?.node;
-    const morePosts = edges.slice(1);
 
     return (
       <>
-        <HeroInnerPage
-          title="IMMIGRATION NEWS"
-          backgroundImageUrl='/images/banner/news.png'
-          content="Gurna Law Corporation"
-        />
-        <Container ContainerClass="">
+      <InnerBanner
+              type="news"
+              serviceName="Blog"
+              title="Immigration News & Updates"
+              subtitle="Stay updated with the latest in Canadian immigration law and Gurna Law Corporation's recent appearances and events."
+              image="/images/banner/news.png" 
+            />
+        <section>
           <div className="mt-[20px]">
-            {heroPost && (
-              <HeroPost
-                title={heroPost.title}
-                coverImage={heroPost.featuredImage}
-                date={heroPost.date}
-                author={heroPost.author}
-                slug={heroPost.slug}
-                excerpt={heroPost.excerpt}
-              />
-            )}
-            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+            {edges.length > 0 && <MoreStories posts={edges} />}
           </div>
-        </Container>
+        </section>
       </>
     );
   } catch (error) {
     console.error("Failed to fetch blog posts:", error);
     return (
       <>
-        <HeroInnerPage
-          title="IMMIGRATION NEWS"
-          backgroundImageUrl='/images/banner/news.png'
-          content="Gurna Law Corporation"
-        />
-        <Container ContainerClass="">
+        <section>
           <div className="mt-[20px] py-12">
             <h2 className="text-2xl font-bold">Latest Immigration News</h2>
             <p className="mt-4 text-gray-600">
               Check back soon for the latest immigration news and updates from Gurna Law Corporation.
             </p>
           </div>
-        </Container>
+        </section>
       </>
     );
   }

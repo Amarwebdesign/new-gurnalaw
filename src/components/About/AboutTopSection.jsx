@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Container from "@/components/Layout/Container";
+import Container from "@/components/InnerBanner/Container";
 import Btn from "@/components/Layout/Btns/Btn";
 import BtnContact from "@/components/Layout/Btns/BtnContact";
-import SectionHeading from "@/components/Layout/SectionHeading";
-import MarqueHeading from "@/components/Layout/MarqueHeading";
-import ImageAnimated from "@/components/Layout/ImageAnimated";
-import ImageAnimated2 from "@/components/Layout/ImageAnimated2";
+import SectionHeading from "@/components/InnerBanner/SectionHeading";
+import MarqueHeading from "@/components/InnerBanner/MarqueHeading";
+import ImageAnimated from "@/components/InnerBanner/ImageAnimated";
+import ImageAnimated2 from "@/components/InnerBanner/ImageAnimated2";
 import React from 'react';
 export default function AboutTopSection() {
     const Year=new Date();

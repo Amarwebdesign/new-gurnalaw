@@ -3,10 +3,10 @@ import Hero from "@/components/Pages/Home/Hero";
 import About from "@/components/Pages/Home/About";
 import Expertise from "@/components/Pages/Home/Expertise";
 import LegalServices from "@/components/Pages/Home/LegalServices";
-import Testimonials from "@/components/Testimonials";
-import FAQS from "@/components/FAQS";
+import Testimonials from "@/components/Sections/Testimonials";
+import FAQS from "@/components/Sections/FAQS";
 import { Compass, FileText, GraduationCap, Scale, ShieldCheck } from "lucide-react";
-import WhyChoose from "@/components/WhyChoose";
+import WhyChoose from "@/components/Sections/WhyChoose";
 
 const whyChooseFeatures = [
     {

@@ -1,6 +1,6 @@
-import HeroInnerPage from "@/components/Layout/HeroInnerPage";
-import Container from "@/components/Layout/Container";
-import SectionHeading from "@/components/Layout/SectionHeading";
+import HeroInnerPage from "@/components/InnerBanner/HeroInnerPage";
+import Container from "@/components/InnerBanner/Container";
+import SectionHeading from "@/components/InnerBanner/SectionHeading";
 import Btn from "@/components/Layout/Btns/Btn";
 
 export default function LocationsPage() {

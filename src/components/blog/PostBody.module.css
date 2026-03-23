@@ -1,5 +1,5 @@
 .content {
-  @apply text-lg leading-relaxed;
+  @apply text-[17px] leading-8 text-slate-700;
 }
 
 .content p,
@@ -10,7 +10,7 @@
 }
 
 .content a {
-  @apply underline;
+  @apply font-medium text-[#C8102E] underline underline-offset-4;
 }
 
 .content ul,
@@ -36,15 +36,15 @@
 }
 
 .content h2 {
-  @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply mt-12 mb-4 text-3xl font-semibold leading-snug text-[#1A2530];
 }
 
 .content h3 {
-  @apply text-2xl mt-8 mb-4 leading-snug;
+  @apply mt-8 mb-4 text-2xl font-semibold leading-snug text-[#1A2530];
 }
 
 .content h4 {
-  @apply text-xl mt-6 mb-4 leading-snug;
+  @apply mt-6 mb-4 text-xl font-semibold leading-snug text-[#1A2530];
 }
 
 .content pre {
@@ -56,11 +56,11 @@
 }
 
 .content figcaption {
-  @apply text-center text-sm;
+  @apply mt-3 text-center text-sm text-slate-500;
 }
 
 .content blockquote {
-  @apply border-l-4 border-gray-500 bg-gray-200 italic ml-0 py-4 px-6;
+  @apply ml-0 rounded-r-2xl border-l-4 border-[#C8102E] bg-[#F8F6F1] px-6 py-5 italic text-[#1A2530];
 }
 
 .content blockquote p {

@@ -1,5 +1,5 @@
-import Container from "@/components/Layout/Container";
-import HeroInnerPage from "@/components/Layout/HeroInnerPage";
+import Container from "@/components/InnerBanner/Container";
+import HeroInnerPage from "@/components/InnerBanner/HeroInnerPage";
 
 export const metadata = {
   title: 'Contact - Immigration Lawyer in Canada | Gurna Law Corporation',

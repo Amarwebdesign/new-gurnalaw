@@ -1,5 +1,5 @@
 "use client";
-import {Menu, X, ChevronDown} from 'lucide-react';
+import {Menu, X, ChevronDown, Calculator} from 'lucide-react';
 import Image from 'next/image';
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -36,8 +36,7 @@ const navigationItems = [
     ],
   },
   { name: "Media", href: "/media" },
-  { name: "News", href: "/canada-immigration-news" },
-  { name: "BC PNP Calculator", href: "/bc-pnp-points-calculator-canada" },
+  { name: "Immigration News", href: "/canada-immigration-news" },
 ];
 
 const navStyles = {
@@ -205,10 +204,10 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-4">
           <Link
             href="/"
-            className="flex h-10 w-[180px] flex-shrink-0 items-center md:h-12 md:w-[220px]"
+            className="flex h-10 w-[180px] flex-shrink-0 items-center md:h-12 md:w-[220px] mr-auto"
             aria-label="Gurna Law Home"
           >
             <Image height={30} width={200} src='images/svg/logo-white.svg' className='logo w-full' alt='Gurna Law Coroporation'/>
@@ -216,7 +215,10 @@ export default function Header() {
 
           <HeaderNavigation />
 
-          <div className="hidden xl:flex">
+          <div className="hidden xl:flex gap-3">
+            <Link href="/bc-pnp-points-calculator-canada" className="bg-[#E5B55E] text-[#1A2530] px-4 py-2 rounded-sm font-bold hover:bg-white transition-colors flex items-center text-xs uppercase leading-3">
+                <Calculator className="w-6 h-6 mr-1" /><div>BC PNP<span className='block text-[10px]'>Calculator</span></div>
+              </Link>
             <Link
               href="/contact"
               className="flex items-center rounded-sm bg-[#C8102E] px-6 py-2.5 text-sm font-medium uppercase tracking-wider text-white shadow-md transition-colors hover:bg-[#A00D24]"
@@ -244,9 +246,12 @@ export default function Header() {
       </div>
 
       {mobileMenuOpen ? (
-        <div className="absolute left-0 max-h-[85vh] w-full overflow-y-auto border-t border-gray-700 bg-[#1A2530] shadow-xl xl:hidden">
-          <div className="space-y-1 px-4 pb-6 pt-2">
+        <div className="absolute left-0 max-h-[85vh] w-full overflow-y-auto border-t border-gray-700 bg-[#1A2530] shadow-xl xl:hidden border-b-8 border-b-white">
+          <div className="space-y-4 px-4 pb-6 pt-2">
             <HeaderNavigation mobile onNavigate={() => setMobileMenuOpen(false)} />
+            <Link href="/bc-pnp-points-calculator-canada" className="bg-[#E5B55E] text-[#1A2530] px-4 py-2 rounded-sm font-bold hover:bg-white transition-colors flex items-center justify-center text-xs uppercase leading-3">
+                <Calculator className="w-6 h-6 mr-1" /><div>BC PNP Calculator</div>
+              </Link>
             <Link
               href="/contact"
               onClick={() => setMobileMenuOpen(false)}

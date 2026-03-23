@@ -25,7 +25,7 @@ export default function Expertise() {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h3 className="text-[#C8102E] uppercase tracking-widest font-bold text-sm mb-4">Our Expertise</h3>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#1A2530] mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1A2530] mb-6">
               Comprehensive Immigration<br className="hidden md:block"/> Solutions
             </h2>
             <p className="text-gray-600 text-lg">
@@ -40,7 +40,7 @@ export default function Expertise() {
                 <div className="mb-6 bg-white w-16 h-16 rounded-lg flex items-center justify-center shadow-sm text-[#1A2530] group-hover:bg-[#1A2530] group-hover:text-white transition-colors duration-300">
                   {service.icon}
                 </div>
-                <h3 className="text-2xl font-serif font-bold text-[#1A2530] mb-3 group-hover:text-[#C8102E] transition-colors">{service.title}</h3>
+                <h3 className="text-2xl font-bold text-[#1A2530] mb-3 group-hover:text-[#C8102E] transition-colors">{service.title}</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
               </div>
             ))}

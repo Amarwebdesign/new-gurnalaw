@@ -5,11 +5,11 @@ interface LatestNewsProps {
 }
 import Head from "next/head";
 import { GetStaticProps } from "next";
-import Container from "@/components/Layout/Container";
-import Header from "@/components/Layout/Header";
+import Container from "@/components/InnerBanner/Container";
+import Header from "@/components/Header";
 import MoreStories from "@/components/blog/MoreStories";
 import HeroPost from "@/components/blog/HeroPost";
-import Layout from "@/components/Layout/Layout";
+import Layout from "@/components/InnerBanner/Layout";
 import { getAllPostsForHome } from "@/lib/api";
 const LatestNews: React.FC<LatestNewsProps> = ({ allPosts: { edges }, preview }) => {
   const heroPost = edges[0]?.node;

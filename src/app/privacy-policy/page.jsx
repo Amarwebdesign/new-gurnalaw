@@ -1,5 +1,5 @@
-import HeroInnerPage from "@/components/Layout/HeroInnerPage";
-import Container from "@/components/Layout/Container";
+import HeroInnerPage from "@/components/InnerBanner/HeroInnerPage";
+import Container from "@/components/InnerBanner/Container";
 
 export default function PrivacyPolicyPage() {
   return (

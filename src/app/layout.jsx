@@ -3,8 +3,8 @@ import "@/styles/andaz.css";
 import "@/styles/testi.css";
 import { Poppins } from "next/font/google";
 import Link from "next/link";
-import Header from "@/components/Layout/Header";
-import Footer from "@/components/Layout/Footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
   subsets: ['latin'],

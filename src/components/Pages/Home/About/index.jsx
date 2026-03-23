@@ -39,7 +39,7 @@ export default function About() {
                 />
                 {/* Name Tag */}
                 <div className="absolute -bottom-6 -left-6 bg-white p-4 pr-8 rounded-lg shadow-xl border-l-4 border-[#C8102E]">
-                  <p className="font-serif font-bold text-[#1A2530] text-lg">Saravpreet Singh</p>
+                  <p className="font-bold text-[#1A2530] text-lg">Saravpreet Singh</p>
                   <p className="text-sm text-[#C8102E] font-medium uppercase tracking-wider">{experience}+ Years of Experience</p>
                    <p className="text-sm text-gray-400 mt-1">Regulated Canadian
                   </p>
@@ -50,7 +50,7 @@ export default function About() {
             {/* Text Side */}
             <div className="relative z-20">
               <h3 className="text-[#C8102E] uppercase tracking-widest font-semibold text-sm mb-3">About Gurna Law</h3>
-              <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#1A2530] mb-6 leading-tight">
+              <h2 className="text-4xl md:text-5xl font-bold text-[#1A2530] mb-6 leading-tight">
                 Dedicated to Your <br/>Canadian Dream.
               </h2>
               <p className="text-gray-600 mb-6 text-lg leading-relaxed">

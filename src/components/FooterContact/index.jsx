@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Mail, MapPin, Phone } from "lucide-react";
 
-export default function FooterCTA() {
+export default function FooterContact() {
   const { register, handleSubmit, handleError, formState: { errors } } = useForm({
     mode: "onChange",
   });
@@ -54,7 +54,7 @@ export default function FooterCTA() {
             {/* Contact Info */}
             <div>
               <h3 className="text-[#C8102E] uppercase tracking-widest font-semibold text-sm mb-3">Get in Touch</h3>
-              <h2 className="text-4xl font-serif font-bold text-[#1A2530] mb-8">Contact Our Office</h2>
+              <h2 className="text-4xl font-bold text-[#1A2530] mb-8">Contact Our Office</h2>
               <p className="text-gray-600 mb-10 text-lg">
                 Fill out the form to request a consultation. Our team will get back to you within 24 business hours to schedule an appointment.
               </p>

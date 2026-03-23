@@ -1,4 +1,4 @@
-import HeroInnerPage from "@/components/Layout/HeroInnerPage";
+import HeroInnerPage from "@/components/InnerBanner/HeroInnerPage";
 
 export const metadata = {
   title: 'Thank You! - Gurna Law Corporation',

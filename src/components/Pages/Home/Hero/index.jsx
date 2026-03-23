@@ -23,7 +23,7 @@ export default function Hero() {
                   Regulated Canadian Immigration Counsel
                 </span>
               </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white leading-[1.1] mb-6 drop-shadow-lg">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6 drop-shadow-lg">
               Gurna Law Corporation
             </h1>
               <p className="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed font-light max-w-2xl">
@@ -52,7 +52,7 @@ export default function Hero() {
             <div className="hidden lg:block lg:w-1/3 max-w-sm">
               <div className="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-xl shadow-2xl relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#C8102E] to-[#A00D24]"></div>
-                <h3 className="text-2xl font-serif font-bold text-white mb-2">Immediate Legal Help</h3>
+                <h3 className="text-2xl font-bold text-white mb-2">Immediate Legal Help</h3>
                 <p className="text-gray-300 text-sm mb-6">Contact our office directly to speak with an immigration professional.</p>
                 
                 <div className="space-y-6">

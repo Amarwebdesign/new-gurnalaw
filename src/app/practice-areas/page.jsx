@@ -1,4 +1,4 @@
-import HeroInnerPage from "@/components/Layout/HeroInnerPage";
+import HeroInnerPage from "@/components/InnerBanner/HeroInnerPage";
 import LegalServices from "@/components/Pages/Home/LegalServices";
 
 export const metadata = {

@@ -20,7 +20,7 @@ export default function FAQS({
           <h3 className="text-[#C8102E] uppercase tracking-widest font-bold text-sm mb-4">
             {subtitle}
           </h3>
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#1A2530] mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#1A2530] mb-6">
             {title}
           </h2>
           {description && (
