@@ -152,12 +152,27 @@ function generateSiteMap() {
       <priority>0.80</priority>
     </url>
     <url>
+      <loc>${MAIN_URL}/terms-of-service</loc>
+      <lastmod>${getCurrentTime()}</lastmod>
+      <priority>0.60</priority>
+    </url>
+    <url>
       <loc>${MAIN_URL}/terms-and-conditions</loc>
       <lastmod>${getCurrentTime()}</lastmod>
       <priority>0.60</priority>
     </url>
     <url>
       <loc>${MAIN_URL}/privacy-policy</loc>
+      <lastmod>${getCurrentTime()}</lastmod>
+      <priority>0.60</priority>
+    </url>
+    <url>
+      <loc>${MAIN_URL}/disclaimer</loc>
+      <lastmod>${getCurrentTime()}</lastmod>
+      <priority>0.60</priority>
+    </url>
+    <url>
+      <loc>${MAIN_URL}/retainer-agreement</loc>
       <lastmod>${getCurrentTime()}</lastmod>
       <priority>0.60</priority>
     </url>

@@ -1,39 +1,50 @@
-import HeroInnerPage from "@/components/InnerBanner/HeroInnerPage";
-import Container from "@/components/InnerBanner/Container";
+import FooterCTA from "@/components/FooterCTA";
+import LegalPage from "@/components/Pages/Legal/LegalPage";
+
+const sections = [
+  {
+    title: "Information We Collect",
+    paragraphs: [
+      "We may collect personal information that you provide voluntarily when you contact our office, request a consultation, complete a website form, or otherwise communicate with Gurna Law Corporation.",
+      "This information may include your name, phone number, email address, immigration-related details, and any information you choose to provide in connection with your legal matter.",
+    ],
+  },
+  {
+    title: "How We Use Information",
+    paragraphs: [
+      "Information collected through this website is used to respond to inquiries, assess whether we may be able to assist with your matter, improve our website experience, and fulfill legal, ethical, and administrative obligations.",
+      "Submitting information through the website does not automatically create a solicitor-client relationship unless and until we expressly confirm that representation has been accepted.",
+    ],
+  },
+  {
+    title: "Confidentiality and Disclosure",
+    paragraphs: [
+      "We do not sell your personal information. Information may be shared only where necessary to provide services, comply with legal obligations, protect our rights, or where disclosure is otherwise authorized by law.",
+      "As legal professionals, we take confidentiality seriously and handle client communications in accordance with applicable professional and legal requirements.",
+    ],
+  },
+  {
+    title: "Cookies and Website Data",
+    paragraphs: [
+      "Our website may use cookies, analytics tools, or technical tracking methods to understand website activity, improve performance, and support marketing and reporting functions.",
+      "You may limit or disable certain tracking technologies through your browser settings, although some website functionality may be affected.",
+    ],
+  },
+  {
+    title: "Contact About Privacy",
+    paragraphs: [
+      "If you have any questions about this Privacy Policy or how information is handled by Gurna Law Corporation, please contact our office directly before submitting sensitive materials online.",
+    ],
+  },
+];
 
 export default function PrivacyPolicyPage() {
   return (
     <>
-      <HeroInnerPage title="Privacy Policy" subtitle="How we protect your personal information" />
-      <section className="py-16">
-        <Container>
-          <div className="max-w-4xl mx-auto prose prose-lg">
-            <h2>Privacy Policy</h2>
-            <p>Last updated: {new Date().toLocaleDateString()}</p>
-
-            <h3>1. Information We Collect</h3>
-            <p>We collect information you provide directly to us, such as when you contact us for legal services, subscribe to our newsletter, or use our website.</p>
-
-            <h3>2. How We Use Your Information</h3>
-            <p>We use the information we collect to provide legal services, communicate with you, improve our website, and comply with legal obligations.</p>
-
-            <h3>3. Information Sharing</h3>
-            <p>We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as required by law.</p>
-
-            <h3>4. Data Security</h3>
-            <p>We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
-
-            <h3>5. Client Confidentiality</h3>
-            <p>As immigration lawyers, we are bound by strict professional confidentiality rules. All client communications and information are protected by solicitor-client privilege.</p>
-
-            <h3>6. Cookies</h3>
-            <p>Our website may use cookies to enhance your browsing experience. You can control cookie settings through your browser preferences.</p>
-
-            <h3>7. Contact Us</h3>
-            <p>If you have questions about this Privacy Policy, please contact us directly.</p>
-          </div>
-        </Container>
-      </section>
+        <LegalPage title="Privacy Policy" subtitle="How we collect, use, and protect information shared through the Gurna Law Corporation website." updatedAt="March 23, 2026" sections={sections} />
+        <FooterCTA/>
     </>
-  );
+  )
+  
+  ;
 }

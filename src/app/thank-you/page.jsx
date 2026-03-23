@@ -1,4 +1,5 @@
-import HeroInnerPage from "@/components/InnerBanner/HeroInnerPage";
+import FooterCTA from "@/components/FooterCTA";
+import InnerBanner from "@/components/InnerBanner";
 
 export const metadata = {
   title: 'Thank You! - Gurna Law Corporation',
@@ -8,11 +9,14 @@ export const metadata = {
 export default function ThankYou() {
   return (
     <>
-      <HeroInnerPage
-        title="Thank You!"
-        content="We appreciate your inquiry and will be in touch soon."
-        backgroundImageUrl='/images/banner/screen.webp'
-      />
+      <InnerBanner
+                    type="service"
+                    serviceName="Thanks"
+                    title="Thank You!"
+                    subtitle="We appreciate your inquiry and will be in touch soon."
+                    image="/images/banner/screen.webp" 
+                  />
+                  <FooterCTA/>
     </>
   );
 }

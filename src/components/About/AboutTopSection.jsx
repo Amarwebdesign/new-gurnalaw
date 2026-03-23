@@ -1,11 +1,6 @@
 import Image from "next/image";
-import Container from "@/components/InnerBanner/Container";
-import Btn from "@/components/Layout/Btns/Btn";
-import BtnContact from "@/components/Layout/Btns/BtnContact";
-import SectionHeading from "@/components/InnerBanner/SectionHeading";
+import Link from "next/link";
 import MarqueHeading from "@/components/InnerBanner/MarqueHeading";
-import ImageAnimated from "@/components/InnerBanner/ImageAnimated";
-import ImageAnimated2 from "@/components/InnerBanner/ImageAnimated2";
 import React from 'react';
 export default function AboutTopSection() {
     const Year=new Date();
@@ -18,7 +13,7 @@ export default function AboutTopSection() {
     headingClass="about"
     />
     <section className="section law-about-area bg-[#f2f4ff]">
-        <Container>
+        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
             <div className="lg:grid grid-cols-2 gap-[100px] items-center">
                 <div className=" relative">
                     
@@ -41,17 +36,22 @@ export default function AboutTopSection() {
                 </div>
 
                 <div className="mt-5 lg:mt-0">
-                    <SectionHeading
-                    minititlecolor="text-blue" minititle="Saravpreet Singh Gurna"
-                    title="Who We Are"
-                    description="Gurna Law Corporation is an esteemed name in the field of Canadian immigration and refugee law. At Gurna Law Corporation, under qualified barrister-level expertise, you can get lawyered up and avail yourself of the whole range of services to steer your application, be it first-time entry, study visa, work permit, permanent residency, an appeal to the IRB or judicial review by the Federal Court of Canada. At our core, we hold your trust in high regard and prioritize your well-being. As a rule, we make a steadfast commitment to refrain from offering false guarantees or pledges. Instead, we let our results speak for themselves: there are cases aplenty where we steered to success even those applicants who had lost all hope after rejections at multiple levels."
-                    />
+                    <p className="text-blue text-sm font-semibold uppercase tracking-[0.18em]">Saravpreet Singh Gurna</p>
+                    <h2 className="mt-4 text-3xl font-semibold text-[#1A2530] md:text-4xl">Who We Are</h2>
+                    <p className="mt-6 text-base leading-8 text-slate-700">
+                      Gurna Law Corporation is an esteemed name in the field of Canadian immigration and refugee law. At Gurna Law Corporation, under qualified barrister-level expertise, you can get lawyered up and avail yourself of the whole range of services to steer your application, be it first-time entry, study visa, work permit, permanent residency, an appeal to the IRB or judicial review by the Federal Court of Canada. At our core, we hold your trust in high regard and prioritize your well-being. As a rule, we make a steadfast commitment to refrain from offering false guarantees or pledges. Instead, we let our results speak for themselves: there are cases aplenty where we steered to success even those applicants who had lost all hope after rejections at multiple levels.
+                    </p>
                     <div className="mt-10 items-center">
-                        <BtnContact link="https://gurnalaw.vercel.app/contact" title="Get A Free Estimate"/>
+                        <Link
+                          href="/contact"
+                          className="inline-flex items-center rounded-full bg-[#C8102E] px-6 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-[#a00d24]"
+                        >
+                          Get A Free Estimate
+                        </Link>
                     </div>                    
                 </div>
             </div>
-        </Container>
+        </div>
     </section>
     </>
   );

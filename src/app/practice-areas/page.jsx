@@ -1,4 +1,4 @@
-import HeroInnerPage from "@/components/InnerBanner/HeroInnerPage";
+import InnerBanner from "@/components/InnerBanner";
 import LegalServices from "@/components/Pages/Home/LegalServices";
 
 export const metadata = {
@@ -19,10 +19,10 @@ export const metadata = {
 export default function PracticeAreas() {
   return (
     <>
-      <HeroInnerPage
+      <InnerBanner
         title="Practice Areas"
-        backgroundImageUrl='/images/banner/PracticeAreas.png'
-        content="Empower Your Canadian Dream With Our Immigration Services."
+        subtitle="Empower your Canadian dream with our immigration services."
+        image="/images/banner/PracticeAreas.png"
       />
 
       <LegalServices />

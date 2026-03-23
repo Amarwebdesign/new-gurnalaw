@@ -1,39 +1,49 @@
-import HeroInnerPage from "@/components/InnerBanner/HeroInnerPage";
-import Container from "@/components/InnerBanner/Container";
+import LegalPage from "@/components/Pages/Legal/LegalPage";
+
+const sections = [
+  {
+    title: "Acceptance of Terms",
+    paragraphs: [
+      "By accessing or using this website, you agree to be bound by the terms governing use of the website and the information made available through it.",
+      "If you do not agree with these terms, you should discontinue use of the website.",
+    ],
+  },
+  {
+    title: "Website Content and Legal Information",
+    paragraphs: [
+      "Content on this website is provided for general informational purposes only and should not be relied upon as legal advice for any specific matter.",
+      "Use of this website, sending us a message, or reading website content does not by itself create a solicitor-client relationship with Gurna Law Corporation.",
+    ],
+  },
+  {
+    title: "Permitted Use",
+    paragraphs: [
+      "You agree to use the website only for lawful purposes and in a way that does not interfere with the operation, security, or integrity of the website.",
+      "You may not misuse the website, attempt unauthorized access, or reproduce website content in a manner that infringes intellectual property or other legal rights.",
+    ],
+  },
+  {
+    title: "Limitation of Liability",
+    paragraphs: [
+      "Gurna Law Corporation does not guarantee that website content is complete, current, or error-free at all times.",
+      "To the fullest extent permitted by law, we disclaim liability arising from reliance on website information or from interruptions, errors, or technical issues affecting website access.",
+    ],
+  },
+  {
+    title: "Contact and Clarification",
+    paragraphs: [
+      "If you need clarification about these terms or would like to discuss legal representation, please contact our office directly before relying on website content for a legal decision.",
+    ],
+  },
+];
 
 export default function TermsAndConditionsPage() {
   return (
-    <>
-      <HeroInnerPage title="Terms and Conditions" subtitle="Please read our terms of service carefully" />
-      <section className="py-16">
-        <Container>
-          <div className="max-w-4xl mx-auto prose prose-lg">
-            <h2>Terms and Conditions</h2>
-            <p>Last updated: {new Date().toLocaleDateString()}</p>
-
-            <h3>1. Acceptance of Terms</h3>
-            <p>By accessing and using Gurna Law Corporation's website and services, you accept and agree to be bound by the terms and provision of this agreement.</p>
-
-            <h3>2. Legal Services</h3>
-            <p>The information provided on this website is for general informational purposes only and does not constitute legal advice. Always seek the advice of a qualified immigration lawyer.</p>
-
-            <h3>3. Professional Responsibility</h3>
-            <p>Gurna Law Corporation maintains the highest standards of professional conduct and client confidentiality as required by law.</p>
-
-            <h3>4. Website Use</h3>
-            <p>You may use this website for lawful purposes only. You agree not to use the website in any way that violates applicable laws or regulations.</p>
-
-            <h3>5. Disclaimer</h3>
-            <p>The information on this website is provided on an "as is" basis. We disclaim all warranties, express or implied, including but not limited to warranties of merchantability and fitness for a particular purpose.</p>
-
-            <h3>6. Limitation of Liability</h3>
-            <p>Gurna Law Corporation shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of your use of this website or our services.</p>
-
-            <h3>7. Contact Information</h3>
-            <p>If you have any questions about these Terms and Conditions, please contact us at our office.</p>
-          </div>
-        </Container>
-      </section>
-    </>
+    <LegalPage
+      title="Terms and Conditions"
+      subtitle="Terms governing the use of this website and the legal information published by Gurna Law Corporation."
+      updatedAt="March 23, 2026"
+      sections={sections}
+    />
   );
 }

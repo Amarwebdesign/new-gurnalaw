@@ -1,5 +1,4 @@
-import Container from "@/components/InnerBanner/Container";
-import HeroInnerPage from "@/components/InnerBanner/HeroInnerPage";
+import InnerBanner from "@/components/InnerBanner";
 
 export const metadata = {
   title: 'Contact - Immigration Lawyer in Canada | Gurna Law Corporation',
@@ -19,14 +18,14 @@ export const metadata = {
 export default function Contact() {
   return (
     <>
-      <HeroInnerPage
+      <InnerBanner
         title="Contact Us"
-        content="Contact Us To Better Understand Your Case"
-        backgroundImageUrl='/images/banner/screen.webp'
+        subtitle="Contact us to better understand your case"
+        image="/images/banner/screen.webp"
       />
 
       <section className="pb-[120px] pt-[120px]">
-        <Container ContainerClass="">
+        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
             <div className="bg-white rounded-xl shadow-[0_8px_48px_#eee] group">
               <div className="rounded-lg p-6 text-center shrink-0">
@@ -172,7 +171,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-        </Container>
+        </div>
       </section>
     </>
   );

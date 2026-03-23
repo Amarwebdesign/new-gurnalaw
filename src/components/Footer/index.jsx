@@ -21,7 +21,7 @@ const locations = [
 const legalAreas = [
   { name: "Privacy Policy", href: "/privacy-policy" },
   { name: "Terms of Service", href: "/terms-of-service" },
-  { name: "Disclaimer", href: "/disclaimer" },
+  { name: "Legal Disclaimer", href: "/disclaimer" },
   { name: "Retainer Agreement", href: "/retainer-agreement" },
 ];
 

@@ -1,7 +1,5 @@
-import HeroInnerPage from "@/components/InnerBanner/HeroInnerPage";
-import Container from "@/components/InnerBanner/Container";
-import SectionHeading from "@/components/InnerBanner/SectionHeading";
-import Btn from "@/components/Layout/Btns/Btn";
+import InnerBanner from "@/components/InnerBanner";
+import Link from "next/link";
 
 export default function LocationsPage() {
   const locations = [
@@ -16,20 +14,35 @@ export default function LocationsPage() {
 
   return (
     <>
-      <HeroInnerPage title="Our Locations" subtitle="Find expert immigration lawyers near you" />
+      <InnerBanner
+        title="Our Locations"
+        subtitle="Find expert immigration lawyers near you"
+        image="/images/banner/PracticeAreas.png"
+        type="location"
+        locationName="British Columbia"
+      />
       <section className="py-16 bg-gray-50">
-        <Container>
-          <SectionHeading title="Immigration Lawyers Across British Columbia" />
+        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-3xl font-semibold text-[#1A2530] md:text-4xl">
+              Immigration Lawyers Across British Columbia
+            </h2>
+          </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             {locations.map((location) => (
               <div key={location.slug} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-semibold mb-2">{location.name}</h3>
                 <p className="text-gray-600 mb-4">{location.description}</p>
-                <Btn href={location.href} text="Learn More" />
+                <Link
+                  href={location.href}
+                  className="inline-flex items-center rounded-full bg-[#C8102E] px-5 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-[#a00d24]"
+                >
+                  Learn More
+                </Link>
               </div>
             ))}
           </div>
-        </Container>
+        </div>
       </section>
     </>
   );
