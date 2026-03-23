@@ -8,13 +8,13 @@ import Footer from "@/components/Layout/Footer";
 
 export default function LocationsPage() {
   const locations = [
-    { name: "Surrey", slug: "surrey", description: "Expert immigration legal services in Surrey." },
-    { name: "Abbotsford", slug: "abbotsford", description: "Professional immigration lawyers in Abbotsford." },
-    { name: "Vancouver", slug: "vancouver", description: "Trusted immigration law firm in Vancouver." },
-    { name: "Coquitlam", slug: "coquitlam", description: "Comprehensive immigration services in Coquitlam." },
-    { name: "Burnaby", slug: "burnaby", description: "Reliable immigration lawyers in Burnaby." },
-    { name: "Langley", slug: "langley", description: "Experienced immigration legal help in Langley." },
-    { name: "Richmond", slug: "richmond", description: "Dedicated immigration lawyers in Richmond." },
+    { name: "Surrey", slug: "surrey", href: "/immigration-lawyer-in-surrey", description: "Expert immigration legal services in Surrey." },
+    { name: "Abbotsford", slug: "abbotsford", href: "/immigration-lawyer-in-abbotsford", description: "Professional immigration lawyers in Abbotsford." },
+    { name: "Vancouver", slug: "vancouver", href: "/immigration-lawyer-in-vancouver", description: "Trusted immigration law firm in Vancouver." },
+    { name: "Coquitlam", slug: "coquitlam", href: "/immigration-lawyer-in-coquitlam", description: "Comprehensive immigration services in Coquitlam." },
+    { name: "Burnaby", slug: "burnaby", href: "/immigration-lawyer-in-burnaby", description: "Reliable immigration lawyers in Burnaby." },
+    { name: "Langley", slug: "langley", href: "/immigration-lawyer-in-langley", description: "Experienced immigration legal help in Langley." },
+    { name: "Richmond", slug: "richmond", href: "/immigration-lawyer-in-richmond", description: "Dedicated immigration lawyers in Richmond." },
   ];
 
   return (
@@ -29,7 +29,7 @@ export default function LocationsPage() {
               <div key={location.slug} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-semibold mb-2">{location.name}</h3>
                 <p className="text-gray-600 mb-4">{location.description}</p>
-                <Btn href={`/locations/${location.slug}`} text="Learn More" />
+                <Btn href={location.href} text="Learn More" />
               </div>
             ))}
           </div>
