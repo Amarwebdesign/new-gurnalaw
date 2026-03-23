@@ -1,5 +1,5 @@
 import BcPnpCalculator from "@/components/Calculator/BcPnpCalculator";
-import Bcpnpherro from "@/components/herroforbcnp";
+
 
 export const metadata = {
   title: 'BC PNP Calculator | Canada PR Points - New Version 2026',
@@ -9,7 +9,6 @@ export const metadata = {
 export default function PageBcPnpCalculator() {
   return (
     <>
-      <Bcpnpherro />
       <BcPnpCalculator/>
     </>
   );
