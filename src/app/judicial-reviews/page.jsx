@@ -1,15 +1,11 @@
-import Layout from "@/components/Layout/Layout";
-import Header from "@/components/Layout/Header";
 import HeroInnerPage from "@/components/Layout/HeroInnerPage";
 import Container from "@/components/Layout/Container";
 import SectionHeading from "@/components/Layout/SectionHeading";
 import Btn from "@/components/Layout/Btns/Btn";
-import Footer from "@/components/Layout/Footer";
 
 export default function JudicialReviewsPage() {
   return (
-    <Layout>
-      <Header />
+    <>
       <HeroInnerPage title="Judicial Reviews" subtitle="Expert legal assistance for judicial review applications" />
       <section className="py-16">
         <Container>
@@ -41,7 +37,6 @@ export default function JudicialReviewsPage() {
           </div>
         </Container>
       </section>
-      <Footer />
-    </Layout>
+    </>
   );
 }

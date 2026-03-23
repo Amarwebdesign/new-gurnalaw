@@ -1,15 +1,11 @@
-import Layout from "@/components/Layout/Layout";
-import Header from "@/components/Layout/Header";
 import HeroInnerPage from "@/components/Layout/HeroInnerPage";
 import Container from "@/components/Layout/Container";
 import SectionHeading from "@/components/Layout/SectionHeading";
 import Btn from "@/components/Layout/Btns/Btn";
-import Footer from "@/components/Layout/Footer";
 
 export default function IDHearingsPage() {
   return (
-    <Layout>
-      <Header />
+    <>
       <HeroInnerPage title="ID Hearings" subtitle="Expert representation for inadmissibility hearings" />
       <section className="py-16">
         <Container>
@@ -41,7 +37,6 @@ export default function IDHearingsPage() {
           </div>
         </Container>
       </section>
-      <Footer />
-    </Layout>
+    </>
   );
 }

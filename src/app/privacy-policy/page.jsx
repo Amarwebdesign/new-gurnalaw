@@ -1,13 +1,9 @@
-import Layout from "@/components/Layout/Layout";
-import Header from "@/components/Layout/Header";
 import HeroInnerPage from "@/components/Layout/HeroInnerPage";
 import Container from "@/components/Layout/Container";
-import Footer from "@/components/Layout/Footer";
 
 export default function PrivacyPolicyPage() {
   return (
-    <Layout>
-      <Header />
+    <>
       <HeroInnerPage title="Privacy Policy" subtitle="How we protect your personal information" />
       <section className="py-16">
         <Container>
@@ -38,7 +34,6 @@ export default function PrivacyPolicyPage() {
           </div>
         </Container>
       </section>
-      <Footer />
-    </Layout>
+    </>
   );
 }

@@ -1,10 +1,7 @@
-import Layout from "@/components/Layout/Layout";
-import Header from "@/components/Layout/Header";
 import HeroInnerPage from "@/components/Layout/HeroInnerPage";
 import Container from "@/components/Layout/Container";
 import SectionHeading from "@/components/Layout/SectionHeading";
 import Btn from "@/components/Layout/Btns/Btn";
-import Footer from "@/components/Layout/Footer";
 
 export default function LocationsPage() {
   const locations = [
@@ -18,8 +15,7 @@ export default function LocationsPage() {
   ];
 
   return (
-    <Layout>
-      <Header />
+    <>
       <HeroInnerPage title="Our Locations" subtitle="Find expert immigration lawyers near you" />
       <section className="py-16 bg-gray-50">
         <Container>
@@ -35,7 +31,6 @@ export default function LocationsPage() {
           </div>
         </Container>
       </section>
-      <Footer />
-    </Layout>
+    </>
   );
 }

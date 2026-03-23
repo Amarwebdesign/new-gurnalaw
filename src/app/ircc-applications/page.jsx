@@ -1,15 +1,11 @@
-import Layout from "@/components/Layout/Layout";
-import Header from "@/components/Layout/Header";
 import HeroInnerPage from "@/components/Layout/HeroInnerPage";
 import Container from "@/components/Layout/Container";
 import SectionHeading from "@/components/Layout/SectionHeading";
 import Btn from "@/components/Layout/Btns/Btn";
-import Footer from "@/components/Layout/Footer";
 
 export default function IRCCApplicationsPage() {
   return (
-    <Layout>
-      <Header />
+    <>
       <HeroInnerPage title="IRCC Applications" subtitle="Complete assistance with Immigration, Refugees and Citizenship Canada applications" />
       <section className="py-16">
         <Container>
@@ -42,7 +38,6 @@ export default function IRCCApplicationsPage() {
           </div>
         </Container>
       </section>
-      <Footer />
-    </Layout>
+    </>
   );
 }
