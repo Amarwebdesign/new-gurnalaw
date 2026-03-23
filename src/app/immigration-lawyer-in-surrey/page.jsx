@@ -3,8 +3,8 @@ import FaqItem from '@/components/Layout/Faq/Faqitem';
 import Container from "@/components/Layout/Container";
 import SectionHeading from "@/components/Layout/SectionHeading";
 import Btn from "@/components/Layout/Btns/Btn";
-import Layer from "@/components/Home/Imagrationlayer/Layer";
-import Canidianimg from "@/components/Home/Imagrationlayer/Canidianimg";
+import Layer from "@/components/Pages/Home/Hero";
+import Canidianimg from "@/components/Home/Hero/Canidianimg";
 
 export const metadata = {
   title: 'Top Immigration Lawyer in Surrey | Fast & Trusted Help',

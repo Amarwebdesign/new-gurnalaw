@@ -1,6 +1,6 @@
 import HeroInnerPage from "@/components/Layout/HeroInnerPage";
 import Services from "@/components/Home/Services";
-import LegalServices from "@/components/Home/LegalServices";
+import LegalServices from "@/components/Pages/Home/LegalServices";
 
 export const metadata = {
   title: 'Practice Areas - Gurna Law Corporation | Fast & Trusted Help',
