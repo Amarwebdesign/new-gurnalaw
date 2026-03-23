@@ -5,8 +5,36 @@ import Expertise from "@/components/Pages/Home/Expertise";
 import LegalServices from "@/components/Pages/Home/LegalServices";
 import Testimonials from "@/components/Testimonials";
 import FAQS from "@/components/FAQS";
+import { Compass, FileText, GraduationCap, Scale, ShieldCheck } from "lucide-react";
+import WhyChoose from "@/components/WhyChoose";
 
-
+const whyChooseFeatures = [
+    {
+      title: "Expertise And Knowledge",
+      desc: "A skilled immigration lawyer in Canada has in-depth knowledge and the necessary skill-set in immigration laws and regulations, providing valuable guidance on the best options for you and your family.",
+      icon: <GraduationCap className="w-8 h-8 text-[#C8102E]" />
+    },
+    {
+      title: "Assistance With Paperwork",
+      desc: "Filling out immigration applications can be daunting. We assist you with filling out your applications correctly and ensuring that all necessary documentation is provided.",
+      icon: <FileText className="w-8 h-8 text-[#C8102E]" />
+    },
+    {
+      title: "Advocacy And Representation",
+      desc: "An Immigration Lawyer can advocate on your behalf if your application is delayed or denied. They can also represent you in legal proceedings, such as appeals, and protect your rights.",
+      icon: <Scale className="w-8 h-8 text-[#C8102E]" />
+    },
+    {
+      title: "Peace Of Mind",
+      desc: "Hiring an immigration lawyer gives you peace of mind and reduces stress. We keep you updated on progress and help you avoid potential pitfalls.",
+      icon: <ShieldCheck className="w-8 h-8 text-[#C8102E]" />
+    },
+    {
+      title: "Consultancy On Life In Canada",
+      desc: "We go over and above our service mandate to provide well-researched insights on starting a new life in Canada, advising on business prospects and general life tips.",
+      icon: <Compass className="w-8 h-8 text-[#C8102E]" />
+    }
+  ];
 const faqs = [
   {
     question: "What immigration services does Gurna Law Corporation offer?",
@@ -76,6 +104,12 @@ export default function Home() {
     <About />
     <Expertise />
     <LegalServices />
+    <WhyChoose 
+        content={whyChooseFeatures}
+        title="How A Canadian Immigration Lawyer Can Assist You"
+        subtitle="Why Choose Us"
+        description="Immigration laws can be complex and confusing. Tracking every single rule and regulation can be a daunting task if you represent yourself. At Gurna Law Corporation, we engage with the immigration regulatory framework as our day job. Let the pros handle it."
+    />
     <Testimonials />
     <FAQS 
         content={faqs}

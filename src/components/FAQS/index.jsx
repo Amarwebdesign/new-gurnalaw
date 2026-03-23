@@ -17,14 +17,14 @@ export default function FAQS({
         
         {/* Header */}
         <div className="text-center mb-16">
-          <h3 className="text-[#C8102E] uppercase tracking-widest font-semibold text-sm mb-3">
+          <h3 className="text-[#C8102E] uppercase tracking-widest font-bold text-sm mb-4">
             {subtitle}
           </h3>
-          <h2 className="text-4xl font-serif font-bold text-[#1A2530]">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#1A2530] mb-6">
             {title}
           </h2>
           {description && (
-            <p className="mt-4 text-gray-600">{description}</p>
+            <p className="text-gray-600 text-lg">{description}</p>
           )}
         </div>
 
