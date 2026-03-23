@@ -2,7 +2,7 @@ import { getAllPostsWithSlug, getPostAndMorePosts } from "@/lib/api";
 import ContainerNews from "@/components/Layout/ContainerNews";
 import PostBody from "@/components/blog/PostBody";
 import MoreStories from "@/components/blog/MoreStories";
-import Header from "@/components/Layout/HeaderNews";
+import Header from "@/components/Layout/Header";
 import PostHeader from "@/components/blog/PostHeader";
 import HeroInnerPage from "@/components/Layout/HeroInnerPage";
 import CTAarea from "@/components/Layout/CTAarea";
