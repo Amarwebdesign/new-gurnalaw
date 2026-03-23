@@ -1,5 +1,4 @@
 import HeroInnerPage from "@/components/Layout/HeroInnerPage";
-import Services from "@/components/Home/Services";
 import LegalServices from "@/components/Pages/Home/LegalServices";
 
 export const metadata = {
@@ -25,7 +24,7 @@ export default function PracticeAreas() {
         backgroundImageUrl='/images/banner/PracticeAreas.png'
         content="Empower Your Canadian Dream With Our Immigration Services."
       />
-      <Services />
+
       <LegalServices />
     </>
   );

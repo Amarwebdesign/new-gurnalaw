@@ -2,9 +2,6 @@ import HeroInnerPage from "@/components/Layout/HeroInnerPage";
 import FaqItem from '@/components/Layout/Faq/Faqitem';
 import Container from "@/components/Layout/Container";
 import SectionHeading from "@/components/Layout/SectionHeading";
-import Btn from "@/components/Layout/Btns/Btn";
-import Layer from "@/components/Pages/Home/Hero";
-import Canidianimg from "@/components/Home/Hero/Canidianimg";
 
 export const metadata = {
   title: 'Top Immigration Lawyer in Surrey | Fast & Trusted Help',
@@ -30,8 +27,6 @@ export default function ImmigrationLawyerSurrey() {
         content="Empower Your Canadian Dream With Our Immigration Services."
       />
 
-      <Layer />
-      <Canidianimg />
 
       <section className="bg-black py-32">
         <Container ContainerClass="">
@@ -47,7 +42,6 @@ export default function ImmigrationLawyerSurrey() {
                     description="Your Legal Queries Answered – Immigration, Citizenship, Notary Services, and More. Discover Expert Guidance Today!"
                   />
                   <div className='mt-5'>
-                    <Btn link="/contact" title="get a quote" btnclass="btn-secondary" />
                   </div>
                 </div>
               </div>

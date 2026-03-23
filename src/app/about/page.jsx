@@ -7,8 +7,6 @@ import SectionHeading from "@/components/Layout/SectionHeading";
 import ImageAnimated from "@/components/Layout/ImageAnimated";
 import ImageAnimated2 from "@/components/Layout/ImageAnimated2";
 import Testimonail from "@/components/Testimonials";
-import ModalVideo from "@/components/Testimonials/ModalVideo";
-import Services from "@/components/Home/Services";
 
 export const metadata = {
   title: 'About - Immigration Lawyer in Surrey | Fast & Trusted Help',
@@ -35,34 +33,7 @@ export default function About() {
         title="About-us"
         content=""
         backgroundImageUrl='/images/inner-page-banner.webp'/>
-      {/* <section className="section hidden">
-        <div className="grid grid-cols-3 gap-5">
-          <ModalVideo
-            thumb="/videos/images/testi-3.png"
-            thumbWidth={768}
-            thumbHeight={432}
-            thumbAlt="Modal video thumbnail"
-            video="/videos/gurnalaw-testimonial-video-2.mp4"
-            videoWidth={768}
-            videoHeight={432} />
-          <ModalVideo
-            thumb="/videos/images/testi-3.png"
-            thumbWidth={768}
-            thumbHeight={432}
-            thumbAlt="Modal video thumbnail"
-            video="/videos/gurnalaw-testimonial-video-2.mp4"
-            videoWidth={768}
-            videoHeight={432} />
-          <ModalVideo
-            thumb="/videos/images/testi-3.png"
-            thumbWidth={768}
-            thumbHeight={432}
-            thumbAlt="Modal video thumbnail"
-            video="/videos/gurnalaw-testimonial-video-2.mp4"
-            videoWidth={768}
-            videoHeight={432} />
-        </div>
-      </section> */}
+     
 
       <section className="section law-about-area">
         <Container ContainerClass="">
@@ -155,7 +126,6 @@ export default function About() {
           </div>
         </Container>
       </section>
-      <Services/>
     </>
   );
 }
