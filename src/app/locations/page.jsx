@@ -1,3 +1,4 @@
+import FooterCTA from "@/components/FooterCTA";
 import InnerBanner from "@/components/InnerBanner";
 import Link from "next/link";
 
@@ -44,6 +45,7 @@ export default function LocationsPage() {
           </div>
         </div>
       </section>
+      <FooterCTA/>
     </>
   );
 }

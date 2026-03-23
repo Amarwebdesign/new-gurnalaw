@@ -1,3 +1,4 @@
+import FooterCTA from "@/components/FooterCTA";
 import InnerBanner from "@/components/InnerBanner";
 import LegalServices from "@/components/Pages/Home/LegalServices";
 
@@ -26,6 +27,7 @@ export default function PracticeAreas() {
       />
 
       <LegalServices />
+      <FooterCTA/>
     </>
   );
 }
